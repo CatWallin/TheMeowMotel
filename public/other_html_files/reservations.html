@@ -54,6 +54,18 @@
 
         <br>
         <br>
+        <caption>Add a new reservation:</caption><br><br>
+        <form action="/action_page.php">
+          <label for="checkin">Check-In Date</label><br>
+          <input type="date" id="checkin" name="checkin" value="Start Date" min="2022-01-01" max="2023-12-31"><br>
+          <label for="checkout">Check-Out Date</label><br>
+          <input type="date" id="checkout" name="checkout" value="End Date" min="2022-01-02" max="2023-12-31"><br>
+          <label for="room">Room ID</label><br>
+          <input type="integer" id="room" name="room" value=""><br>
+          <label for="customer">Customer ID</label><br>
+          <input type="int" id="customer" name="customer" value=""><br>
+          <input type="submit" value="Submit">
+        </form>
 
         <p><a href="../index.html">Back to HomePage</a></p>
 

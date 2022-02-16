@@ -44,6 +44,20 @@
           </table>
         <br>
         <br>
+        <caption>Add a new room:</caption><br><br>
+        <form action="/action_page.php">
+          <input type="checkbox" name="clean" value="Clean">
+          <label for="clean"> The room is clean </label><br>
+          <input type="checkbox" name="occupied" value="Occupied">
+          <label for="occupied"> The room is occupied </label><br>
+          <label for="cat">Cat ID</label><br>
+          <input type="integer" id="cat" name="cat" value=""><br>
+          <label for="employee">Employee ID</label><br>
+          <input type="int" id="employee" name="employee" value=""><br>
+          <label for="reservation">Reservation ID</label><br>
+          <input type="integer" id="reservation" name="reservation" value=""><br>
+          <input type="submit" value="Submit">
+        </form>
 
         <h2>Search for Room</h2>
         <label for="room_search">Search by ID:</label>

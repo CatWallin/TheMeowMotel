@@ -2,7 +2,7 @@
 	<html lang="en">
 	  <head>
 		<meta charset="utf-8">
-		<title>Customers</title>
+		<title>Rooms</title>
         <link href="../style/style.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <div id="nav-placeholder"></div>
@@ -16,16 +16,17 @@
       });
       </script>
 
-          <h3>Customers</h3>
+          <h3>Rooms</h3>
           <table>
             <caption>List of Customers</caption>
             <thead>
               <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
+                <th>Clean</th>
+                <th>Occupied</th>
+                <th>Cat</th>
+                <th>Employee</th>
                 <th>Reservation</th>
                 <th>Edit</th>
-                <th>Delete</th>
               </tr>
             </thead>
             <tbody>
@@ -33,11 +34,10 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
+                <td></td>
                 <td>
                   <i class="material-icons">&#xe254;</i>
-                </td>
-                <td>
-                  <i class="material-icons">&#xe872;</i>
                 </td>
               </tr>
             </tbody>
@@ -45,9 +45,9 @@
         <br>
         <br>
 
-        <h2>Search for Customers</h2>
-        <label for="customer_search">Search by last name:</label>
-        <input type="search" id="customer_search" name="customer_search">
+        <h2>Search for Room</h2>
+        <label for="room_search">Search by ID:</label>
+        <input type="search" id="room_search" name="room_search">
         <button type="button">Search</button>
 
         <br>

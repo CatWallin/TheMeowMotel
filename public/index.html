@@ -2,11 +2,21 @@
 <head>
   <title> CS340: The Pawsome Hotel Management Database Strategy </title>
   <link href="style/style.css" rel="stylesheet" type="text/css" />
+  <div id="nav-placeholder"></div>
 </head>
 <body>
+
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script>
+    $.get("navbar.html", function(data){
+    $("#nav-placeholder").replaceWith(data);
+  });
+  </script>
+
   <h3> CS340: The Pawsome Hotel Management Database Strategy </h3>
+
   <ul>
-    <p><a href='/other_html_files/reservation.html'>Reservations</a></p>
+    <p><a href='/other_html_files/reservations.html'>Reservations</a></p>
     <p><a href='/other_html_files/cats.html'>Cats</a></p>
     <p><a href='/other_html_files/rooms.html'>Rooms</a></p>
     <p><a href='/other_html_files/employees.html'>Employees</a></p>

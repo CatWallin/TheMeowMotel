@@ -4,8 +4,18 @@
 		<meta charset="utf-8">
 		<title>Cat Customers</title>
         <link href="../style/style.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div id="nav-placeholder"></div>
 	  </head>
 	  <body>
+
+      <script src="//code.jquery.com/jquery.min.js"></script>
+      <script>
+        $.get("../navbar.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+      });
+      </script>
+
           <h3>Cat Customer</h3>
           <table>
             <caption>List of Cat Customers</caption>
@@ -13,8 +23,8 @@
               <tr>
                 <th>Cat</th>
                 <th>Customer</th>
-                <th></th>
-                <th></th>
+                <th>Edit</th>
+                <th>Delete</th>
               </tr>
             </thead>
             <tbody>
@@ -22,14 +32,22 @@
                 <td></td>
                 <td></td>
                 <td>
-                    <button>Update</button>
+                  <i class="material-icons">&#xe254;</i>
                 </td>
                 <td>
-                    <button>Delete</button>
+                  <i class="material-icons">&#xe872;</i>
                 </td>
               </tr>
             </tbody>
           </table>
+        <br>
+        <br>
+
+        <h2>Search for Cat Customer</h2>
+        <label for="cat_customer_search">Search by last name:</label>
+        <input type="search" id="cat_customer_search" name="cat_customer_search">
+        <button type="button">Search</button>
+
         <br>
         <br>
 

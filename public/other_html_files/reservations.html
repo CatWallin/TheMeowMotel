@@ -2,7 +2,7 @@
 	<html lang="en">
 	  <head>
 		<meta charset="utf-8">
-		<title>Customers</title>
+		<title>Reservations</title>
         <link href="../style/style.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <div id="nav-placeholder"></div>
@@ -16,20 +16,22 @@
       });
       </script>
 
-          <h3>Customers</h3>
+          <h3>Reservations</h3>
           <table>
             <caption>List of Customers</caption>
             <thead>
               <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Reservation</th>
+                <th>Check-In Date</th>
+                <th>Check-Out Date</th>
+                <th>Room</th>
+                <th>Customer</th>
                 <th>Edit</th>
                 <th>Delete</th>
               </tr>
             </thead>
             <tbody>
               <tr>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -45,9 +47,9 @@
         <br>
         <br>
 
-        <h2>Search for Customers</h2>
-        <label for="customer_search">Search by last name:</label>
-        <input type="search" id="customer_search" name="customer_search">
+        <h2>Search for Reservation</h2>
+        <label for="reservation_search">Search by customer last name:</label>
+        <input type="search" id="reservation_search" name="reservation_search">
         <button type="button">Search</button>
 
         <br>

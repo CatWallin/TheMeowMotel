@@ -4,8 +4,18 @@
 		<meta charset="utf-8">
 		<title>Reservations</title>
         <link href="../style/style.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div id="nav-placeholder"></div>
 	  </head>
 	  <body>
+
+      <script src="//code.jquery.com/jquery.min.js"></script>
+      <script>
+        $.get("../navbar.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+      });
+      </script>
+
           <h3>Reservations</h3>
           <table>
             <caption>List of Customers</caption>
@@ -15,8 +25,8 @@
                 <th>Check-Out Date</th>
                 <th>Room</th>
                 <th>Customer</th>
-                <th></th>
-                <th></th>
+                <th>Edit</th>
+                <th>Delete</th>
               </tr>
             </thead>
             <tbody>
@@ -24,15 +34,24 @@
                 <td></td>
                 <td></td>
                 <td></td>
+                <td></td>
                 <td>
-                    <button>Update</button>
+                  <i class="material-icons">&#xe254;</i>
                 </td>
                 <td>
-                    <button>Delete</button>
+                  <i class="material-icons">&#xe872;</i>
                 </td>
               </tr>
             </tbody>
           </table>
+        <br>
+        <br>
+
+        <h2>Search for Reservation</h2>
+        <label for="reservation_search">Search by customer last name:</label>
+        <input type="search" id="reservation_search" name="reservation_search">
+        <button type="button">Search</button>
+
         <br>
         <br>
 
